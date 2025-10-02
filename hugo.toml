@@ -1,4 +1,4 @@
 baseURL = 'https://rollens.life/'
 languageCode = 'en-us'
-title = 'It my life'
+title = 'My New Hugo Site'
 theme = 'blowfish'

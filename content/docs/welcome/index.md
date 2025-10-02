@@ -1,6 +1,7 @@
 ---
 title: "Welcome to Blowfish"
 weight: 1
+author: "Rollens"
 draft: false
 description: "Discover what's new in Blowfish version 2.0."
 tags: ["new", "docs"]
