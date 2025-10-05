@@ -2,16 +2,14 @@
 # Refer to the theme docs for more details about each of these parameters.
 # https://blowfish.page/docs/getting-started/
 
-theme = "blowfish"
+theme = "blowfish" # UNCOMMENT THIS LINE
 baseURL = "https://rollens.life"
-defaultContentLanguage = "en"
-disableLanguages = [] #to allow translation work requiring shipping to production
+defaultContentLanguage = "zh-tw"
 
-# pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
+pluralizeListTitles = "true" # hugo function useful for non-english languages, find out more in  https://gohugo.io/getting-started/configuration/#pluralizelisttitles
 
 enableRobotsTXT = true
-summaryLength = 30
-hasCJKLanguage = true
+summaryLength = 0
 
 buildDrafts = false
 buildFuture = false
@@ -21,7 +19,7 @@ enableEmoji = true
 googleAnalytics = "G-XJT9GR6C00"
 
 [pagination]
-  pagerSize = 102
+  pagerSize = 100
 
 [imaging]
   anchor = 'Center'
@@ -33,7 +31,7 @@ googleAnalytics = "G-XJT9GR6C00"
   series = "series"
 
 [sitemap]
-  changefreq = 'always'
+  changefreq = 'daily'
   filename = 'sitemap.xml'
   priority = 0.5
 
@@ -69,20 +67,3 @@ googleAnalytics = "G-XJT9GR6C00"
       name = 'fragmentrefs'
       type = 'fragments'
       weight = 10
-
-# Render only specific parts of the site for faster development. 
-# Note that there are more files are ignored in development/hugo.toml
-#
-# Usage: `hugo --renderSegments core` or `hugo --renderSegments core,en_only`
-[segments]
-  [segments.core]
-    [[segments.core.includes]]
-      # Debug core pages
-      path = '{/,/docs,/docs/**,/samples,/samples/**}'
-  [segments.en_only]
-    [[segments.en_only.includes]]
-      # Alternatively, you can use environment variable
-      #   - UNIX: HUGO_DISABLELANGUAGES='it ja zh-cn' npm run example:core
-      #   - Windows CMD: set "HUGO_DISABLELANGUAGES=it ja zh-cn" && npm run example:core
-      #   - Windows PowerShell: $env:HUGO_DISABLELANGUAGES="it ja zh-cn"; npm run example:core
-      lang = 'en'
