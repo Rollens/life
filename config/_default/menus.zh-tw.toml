@@ -37,6 +37,12 @@
   pageRef = "transfer_license"
   weight = 20
 
+[[main]]
+  name = "生活資訊"
+  parent = "Information"
+  pageRef = "Life"
+  weight = 20
+
 #[[subnavigation]]
 #  name = "An interesting topic"
 #  pageRef = "tags/interesting-topic"
